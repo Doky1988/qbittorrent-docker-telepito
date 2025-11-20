@@ -23,18 +23,21 @@ Ez a Bash szkript automatizálja a **qBittorrent** torrent kliens Docker kontén
 
 ### Használat
 
-1.  **Mentse el a szkriptet:**
+1.  **Hozz létre egy fájlt, például `qbittorrent-docker-telepito.sh` néven:**
     ```bash
-    # Például 'qbittorrent-docker-telepito.sh' néven
     nano qbittorrent-docker-telepito.sh 
-    # (Illessze be a szkript tartalmát)
+    ```
+    - Majd illeszd be az itt található script tartalmát, és mentsd el.
+
+2.  **Adj neki futási jogot:**
+
+    ```bash
     chmod +x qbittorrent-docker-telepito.sh
     ```
-
-2.  **Futtassa a szkriptet rootként:**
-
+    
+3. **Most pedig indítsd el:**
     ```bash
-    sudo ./install.sh
+    sudo ./qbittorrent-docker-telepito.sh
     ```
 
     A szkript először **bekéri a használni kívánt domaint** (pl. `torrent.domain.hu`).
